@@ -1,0 +1,45 @@
+.em-main {
+    width: 100vw;
+    min-height: 100vh;
+    &__content {
+        background: var(--color-blue-900);
+        height: 100%;
+        mix-blend-mode: lighten;
+        position: relative;
+
+    }
+
+    &__sub-content {
+        min-height: 100vh;
+        background: url('../assets/images/constellations.png') no-repeat;
+        background-position: top;
+        background-size: 100% 100%;
+        position: relative;
+        mix-blend-mode: lighten;
+        z-index: 1;
+    }
+
+    &__background {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(360deg, var(--color-blue-900) 0%, rgba(9, 1, 59, 0) 100%);
+        z-index: 0;
+        height: 250vh;
+        transform: rotate(-180deg);
+
+    }
+
+    &__image {
+        position: absolute;
+        top: 250vh;
+        left: 0;
+        right: 0;
+        max-width: 100%;
+        z-index: 0;
+        transform: translateY(-65%);
+        
+    }
+}

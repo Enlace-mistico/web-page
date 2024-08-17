@@ -1,0 +1,25 @@
+<section class="em-services" id="services">
+    <em-title title="Nuestros Servicios"></em-title>
+    <div class="em-services__description">
+        <p>Entre los servicios que ofrecemos se encuentran los rituales para encontrar el amor verdadero, amarre de parejas y uniones carnales, que han sido perfeccionados a lo largo de los años para asegurar resultados efectivos y duraderos. Además, realizamos limpias espirituales profundas que liberan a nuestros clientes de energías negativas, permitiéndoles avanzar en sus caminos con una mente clara y un corazón abierto. Estos rituales se llevan a cabo con el máximo respeto hacia las fuerzas espirituales y con un compromiso inquebrantable hacia el bienestar de quienes buscan nuestra ayuda.        </p>
+    </div>
+    <div class="em-services__container" >
+        <div class="em-services__card"  [class.active]="currentItem === i" *ngFor="let service of servicesOrder; index as i" [id]="service.id" >
+            <div class="em-services__card-inner">
+                <div class="em-services__card-front"></div>
+                <div class="em-services__card-back">
+                    <span>
+                        {{service.description}}
+                        <em-button (trigger)="goToWhatsapp(service.link)">
+                            ¡Contactenos!
+                        </em-button>
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        <img class="em-services__arrow-left" src="./assets/images/left.png" alt="arrow_left" (click)="prev()">
+        <img class="em-services__arrow-right" src="./assets/images/right.png" alt="arrow_right" (click)="next()">
+    
+    </div>
+</section>

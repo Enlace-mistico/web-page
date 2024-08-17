@@ -1,0 +1,75 @@
+.em-banner {
+    width: 100vw;
+    min-height: 100vh;
+    mix-blend-mode: screen;
+    position: relative;
+
+    &__background {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(360deg, var(--color-blue-900) 0%, rgba(9, 1, 59, 0) 100%);
+        z-index: 1;
+    }
+
+    &__horoscopo {
+        background: url('../../../assets/images/horoscopo.png') no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        mix-blend-mode: screen;
+    }
+
+    &__lights {
+        background: url('../../../assets/images/lights.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        mix-blend-mode: screen;
+        z-index: 2;
+    }
+
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        z-index: 4;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h1 {
+
+            font-family: var(--font-family-secondary);
+            font-style: normal;
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 64px;
+            text-align: center;
+            color: var(--color-white);
+        }
+
+        h3 {
+            font-family: var(--font-family-tertiary);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            color: var(--color-white);
+        }
+    }
+}

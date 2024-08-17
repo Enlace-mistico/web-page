@@ -1,0 +1,78 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+    --color-blue-900: #09013C;
+    --color-purple-800: #42205A;
+    --color-purple-500: #74399E;
+    --color-white: #FFF;
+    --color-gold: #FFB31B;
+    --color-black: #000;
+
+    --linear-gradient-gold: linear-gradient(90deg, #FFB31B 0%, #FDDFA1 44%, #FDDFA1 63%,  #FFB31B 100%);
+    --font-family: 'Metal';
+    --font-family-secondary: 'Abhaya';
+    --font-family-tertiary: 'Poppins';
+
+}
+
+@font-face {
+    font-family: 'Metal';
+    src: url('../src/assets/fonts/Metal-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Abhaya';
+    src: url('../src/assets/fonts/AbhayaLibre-Bold.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Abhaya';
+    src: url('../src/assets/fonts/AbhayaLibre-ExtraBold.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Abhaya';
+    src: url('../src/assets/fonts/AbhayaLibre-Medium.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Abhaya';
+    src: url('../src/assets/fonts/AbhayaLibre-Regular.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Abhaya';
+    src: url('../src/assets/fonts/AbhayaLibre-SemiBold.woff2') format('woff2');
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../src/assets/fonts/Poppins-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

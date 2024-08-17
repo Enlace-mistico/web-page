@@ -1,0 +1,19 @@
+<section class="em-testimonials" id="testimonials">
+    <em-title title="Testimonios"></em-title>
+    <div class="em-testimonials__carousel">
+        <div class="em-testimonials__carousel-item" [class.active]="currentItem === i" *ngFor="let testimonial of testimonials; index as i">
+            <div class="em-testimonials__header">
+                <strong>{{testimonial.title}}</strong>
+                <p>
+                    {{testimonial.description}}
+                </p>
+            </div>
+            <div class="em-testimonials__images">
+                <img [src]="'./assets/images/' + testimonial.image" alt="testimonial">
+                <img src="./assets/images/frame.png" alt="frame" height="125%">
+            </div>
+        </div>
+        <img class="em-testimonials__carousel-arrow-left" src="./assets/images/left.png" alt="arrow_left" (click)="prev()">
+        <img class="em-testimonials__carousel-arrow-right" src="./assets/images/right.png" alt="arrow_right" (click)="next()">
+    </div>
+</section>

@@ -1,0 +1,13 @@
+<section class="em-benefits">
+    <em-title title="¿Por qué elegirnos?"></em-title>
+    <div class="em-benefits__container">
+        <div class="em-benefits__card" *ngFor="let benefit of benefits">
+            <img [src]="'./assets/images/' + benefit.image" alt="{{benefit.title}}">
+            <div class="em-benefits__card-title">
+                <h5>{{benefit.title}}</h5>
+                <span>{{benefit.description}}</span>
+            </div>
+        </div>
+
+    </div>
+</section>

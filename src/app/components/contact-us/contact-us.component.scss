@@ -1,0 +1,38 @@
+.em-contact-us {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 5rem 2rem 2rem;
+    position: relative;
+    z-index: 2;
+
+    &__content {
+        font-family: var(--font-family-tertiary);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        color: var(--color-white); 
+        width: 60%;
+        margin: auto; 
+    }
+
+    &__paragraph {
+        margin-bottom: 3rem;
+    }
+
+    &__image {
+         &-1 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 2;
+         }
+         &-2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+         }
+    }
+}

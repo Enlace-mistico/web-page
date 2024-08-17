@@ -1,0 +1,75 @@
+.em-benefits {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 2rem;
+
+    &__container {
+        position: relative;
+        display: grid;
+        width: 80%;
+        padding-top: 2rem;
+        margin: auto;
+        grid-template-columns: 33% 33% 33%;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        width: 90%;
+        background-color: rgba($color: #2C2970, $alpha: 0.7);
+        border-radius: 20px;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        border-radius: 20px;
+        height: 100%;
+
+
+        &-title {
+            font-family: var(--font-family-tertiary);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: var(--color-white);
+            text-align: center;
+
+            h5 {
+                font-weight: bold;
+                font-size: 16px;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+        }
+
+    }
+
+    @media (max-width: 550px) {
+        grid-template-columns: auto;
+        padding: 2rem 1rem;
+
+        &__title {
+            font-size: 50px;
+        }
+
+
+        &__container {
+            left: unset;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__card {
+            flex-direction: column;
+            &:nth-child(2) {
+                margin-left: unset;
+            }
+        }
+    }
+}

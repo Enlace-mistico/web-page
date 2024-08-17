@@ -1,0 +1,23 @@
+.em-about-us {
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+    padding: 10rem 2rem 2rem;
+
+    &__content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 3rem;
+        font-family: var(--font-family-tertiary);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        color: var(--color-white);
+        width: 80%;
+        margin: auto;
+        text-align: justify;
+    }
+}

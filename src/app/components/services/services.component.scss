@@ -1,0 +1,319 @@
+.em-services {
+    min-height: 150vh;
+    width: 100vw;
+    z-index: 1;
+    position: relative;
+    padding: 2rem;
+
+    &__description {
+        font-family: var(--font-family-tertiary);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        color: var(--color-white);
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__card {
+        position: absolute; 
+
+        &:nth-child(1) {
+            right: 8rem;
+            z-index: 1;
+            .em-services__card-front {
+                height: 50vh;
+                width: 300px;
+                position: absolute; 
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 1;
+            }
+            filter: drop-shadow( 0 0 10px var(--color-black));
+        }
+        &:nth-child(2) {
+            right: 0rem;
+            filter: drop-shadow( 0 0 10px var(--color-black));
+            z-index: 2;
+            .em-services__card-front {
+                height: 60vh;
+                width: 325px;
+                position: absolute; 
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 2;
+            }
+        }
+        &:nth-child(3) {
+            z-index: 3;
+            filter: drop-shadow( 0 0 10px var(--color-black));
+
+        }
+
+        &:nth-child(5) {
+            left: 13rem;
+            z-index: 1;
+            .em-services__card-front {
+                height: 50vh;
+                width: 300px;
+                position: absolute; 
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 1;
+            }
+            filter: drop-shadow( 0 0 10px var(--color-black));
+        }
+        &:nth-child(4) {
+            left: 3rem;
+            filter: drop-shadow( 0 0 10px var(--color-black));
+            z-index: 2;
+            .em-services__card-front {
+                height: 60vh;
+                width: 325px;
+                position: absolute; 
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 2;
+            }
+        }
+    }
+
+    &__card {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        perspective: 1000px;
+        background-color: transparent;
+
+        width: 350px;
+        height: 70vh;
+
+        &#retorno {
+            .em-services__card-front {
+                background: url(../../../assets/images/retorno_de_pareja.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+    
+            .em-services__card-back {
+                background: url(../../../assets/images/card-back.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            &.active:hover {
+                
+                .em-services__card-inner {
+                    transform: rotateY(180deg);
+                    
+                }
+            } 
+        }
+       
+        &#alejamiento {
+            .em-services__card-front {
+                background: url(../../../assets/images/alejamiento_de_personas.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+    
+            .em-services__card-back {
+                background: url(../../../assets/images/card-back.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            &.active:hover {
+                .em-services__card-inner {
+                    transform: rotateY(180deg);
+                    
+                }
+            } 
+        }
+
+        &#endulzamiento {
+            .em-services__card-front {
+                background: url(../../../assets/images/endulzamiento_amoroso.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+    
+            .em-services__card-back {
+                background: url(../../../assets/images/card-back.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            &.active:hover {
+                .em-services__card-inner {
+                    transform: rotateY(180deg);
+                    
+                }
+            } 
+        }
+
+        &#limpia {
+            .em-services__card-front {
+                background: url(../../../assets/images/limpias_espirituales.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+    
+            .em-services__card-back {
+                background: url(../../../assets/images/card-back.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            &.active:hover {
+                .em-services__card-inner {
+                    transform: rotateY(180deg);
+                    
+                }
+            } 
+        }
+
+        &#union {
+            .em-services__card-front {
+                background: url(../../../assets/images/uniones_carnales.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+    
+            .em-services__card-back {
+                background: url(../../../assets/images/card-back.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            &.active:hover {
+                .em-services__card-inner {
+                    transform: rotateY(180deg);
+                    
+                }
+            } 
+        }
+
+        &-front, &-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        &-back {
+            transform: rotateY(180deg);
+
+            span {
+                width: 275px;
+                position: absolute;
+                color: var(--color-white);
+                font-family: var(--font-family-tertiary);
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 20px;
+                top: 50%;
+                transform: translate(-40%, -50%);
+                left: 40%;
+
+                ::ng-deep .re-button {
+                    font-size: 24px;
+                    margin-top: 2rem;
+
+                }
+            }
+        }
+    
+        &-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: justify;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        
+    }
+
+    &__arrow-left {
+        position: relative;
+        right: 30rem; 
+
+        &:hover {
+            filter: drop-shadow(white 1px 1px 10px);
+            cursor: pointer;
+        }
+    }
+
+    &__arrow-right {
+        position: relative;
+        left: 32rem;
+
+        &:hover {
+            filter: drop-shadow(white 1px 1px 10px);
+            cursor: pointer;
+        }
+    }
+
+
+    @media (max-width: 550px) {
+        padding: 2rem 1rem;
+
+
+        &__header {
+            width: 100%;
+        }
+
+        &__card {
+            &-front span {
+                bottom: 8rem;
+                transform: translateX(-55%);
+
+            }
+
+            &:nth-child(4), &:nth-child(5) {
+                .em-services__card-front span {
+                    transform: translateX(-50%);
+                    bottom: 7.5rem;
+                }
+            }
+
+            &:hover {
+                .em-services__card-front {
+                    span {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+}

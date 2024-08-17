@@ -1,0 +1,28 @@
+.em-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    font-family: var(--font-family-secondary);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 2rem;
+    text-align: center;
+    background: linear-gradient(90deg, #FFB31B 0%, #FDDFA1 44%, #FDDFA1 63.5%, #FFB31B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+
+
+    @media (max-width: 550px) {
+        font-size: 30px;
+        justify-content: center;
+        text-align: center;
+    }
+}
