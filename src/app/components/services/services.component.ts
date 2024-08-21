@@ -21,6 +21,10 @@ export class ServicesComponent implements OnInit{
   order = [1, 2, 0, 3, 4];
   servicesOrder: typeof SERVICES = [];
 
+  get isMobile(): boolean {
+    return screen.width < 550;
+  }
+
   constructor(
     private _cdRef:  ChangeDetectorRef
   ){}

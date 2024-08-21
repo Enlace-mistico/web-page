@@ -35,4 +35,11 @@
             z-index: 2;
          }
     }
+
+    @media (max-width: 550px) {
+        &__content {
+            width: 100%;
+            padding: 0.5rem;
+        }
+    }
 }
